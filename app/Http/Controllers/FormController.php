@@ -16,7 +16,6 @@ public function Form()
 	return view('Name');
 }
 public function Formadd(Request $request){
-//dd($request->all());
 $FirstName = $request->input('firstname');
 echo "Firstname is :" .$FirstName."<br>";
 $LastName = $request->input('lastname');
@@ -40,7 +39,10 @@ echo "City is:" .$City. "<br>";
 $Address = $request->input('address');
 echo "Address is:" .$Address. "<br>";
 
+
+
 return view('Student',['firstname'=>$FirstName,'lastname'=>$LastName,'dateofbirth'=>$DateOfBirth,'email'=>$Email,'password'=>$Password,'phoneno'=>$PhoneNo,'country'=>$Country,'state'=>$State,'gender'=>$Gender,'city'=>$City,'address'=>$Address]);
 }
 }
+
 ?>

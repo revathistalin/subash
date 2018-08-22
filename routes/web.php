@@ -21,3 +21,9 @@ Route::get('Test/{id}','TestController@TestTeam');
 Route::get('Form','FormController@Form');
 Route::post('addform','FormController@Formadd');
 
+Route::get('bearinsert','BearController@bearinsert');
+
+Route::post('beardetails','BearController@Beardetails');
+
+Route::get('fishdetails','FishController@Fishdetails');
+Route::post('fishresult','FishController@Fishresult');
