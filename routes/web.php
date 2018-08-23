@@ -23,7 +23,18 @@ Route::post('addform','FormController@Formadd');
 
 Route::get('bearinsert','BearController@bearinsert');
 
-Route::post('beardetails','BearController@Beardetails');
+//Route::post('beardetails','BearController@Beardetails');
 
 Route::get('fishdetails','FishController@Fishdetails');
 Route::post('fishresult','FishController@Fishresult');
+
+Route::get('treeinsert','TreeController@Treedetails');
+Route::post('treeresult','TreeController@Treeresult');
+
+Route::get('picnicinsert','PicnicContriller@Picnicdetails');
+//Route::post('picnicresult','PicnicController@Picnicdetails');
+Route::get('bearfish','BearController@bearFish');
+
+Route::get('student','StudentController@Student');
+Route::post('studentinsert','StudentController@Studentinsert');
+Route::get('studentlist','StudentController@Studentlist');

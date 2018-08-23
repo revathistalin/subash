@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Tree extends Model
 {
-    class Tree extends Eloquent {
+ 
 
     // MASS ASSIGNMENT -------------------------------------------------------
     // define which attributes are mass assignable (for security)
@@ -20,4 +20,4 @@ class Tree extends Model
 
 }
 
-}
+

@@ -4,14 +4,16 @@ namespace App\models;
 
 use Illuminate\Database\Eloquent\Model;
 
+use App\models\Fish;
+
 class Bear extends Model
 {
-protected $fillable = array('name', 'type', 'danger_level');
+protected $fillable = array('name', 'type', 'dangr_level');
 
     // DEFINE RELATIONSHIPS --------------------------------------------------
     // each bear HAS one fish to eat
     public function fish() {
-        return $this->hasOne('Fish'); // this matches the Eloquent model
+        return $this->hasOne('App\models\Fish'); // this matches the Eloquent model
     }
 
     // each bear climbs many trees

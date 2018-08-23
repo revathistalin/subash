@@ -22,5 +22,3 @@ class Picnic extends Model
 
 }
 
-}
-ss
