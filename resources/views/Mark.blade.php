@@ -16,4 +16,4 @@
 </form>
 </table>
 
-
+<p><a href='{{url("/studentlist")}}'>cancel</a></p>

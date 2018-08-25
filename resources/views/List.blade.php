@@ -21,3 +21,7 @@
 </tr>
 
 @endforeach
+<table>
+<tr><td><a href='{{url("/student")}}' style="caption align='right'">Add data</a></td></tr>
+<tr><td><a href='{{url("/rank")}}'>Rank list</a></td></tr>
+</table>

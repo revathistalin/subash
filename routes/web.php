@@ -43,6 +43,9 @@ Route::post('update','StudentController@Studentupdate');
 Route::get('Studentdelete/{id}','StudentController@Studentdelete');
 Route::get('Studentmark/{id}','StudentController@Studentmark');
 Route::post('marklist','StudentController@Marklist');
-//Route::get('rank','StudentController@Rank');
+Route::get('rank','StudentController@Rank');
 Route::get('view/{id}','StudentController@View');
 Route::post('updatemark','StudentController@Updatemark');
+
+Route::get('validation','PostController@Validation');
+Route::post('validationlist','PostController@validationlist');

@@ -13,6 +13,7 @@
 <tr><td>maths:</td><td><input type="number" name="maths" placeholder="Enter the mark" value='{{$change->maths}}'></td></tr>
 <tr><td>chemistry:</td><td><input type="number" name="chemistry" value='{{$change->chemistry}}'></td></tr> 
 <tr><td>tamil:</td><td><input type="number" name="tamil" value='{{$change->tamil}}'></td></tr>
+
 <tr><td><input type="submit" name="submit" value="submit"></td></tr>
 </form>
 </table>

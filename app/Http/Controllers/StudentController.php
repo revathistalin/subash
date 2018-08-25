@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Foundation\Bus\DispatchesJobs;
+use Illuminate\Validation\validator;
 use DB;
 
 
@@ -26,6 +27,13 @@ DB::table('student')->where('id', '<', 2)->delete();*/
 
 public function Studentinsert(Request $request)
 {
+ /*$validatedData = $request->validate([
+        'name' => 'integer|required|max:5',
+        'email' => 'required',
+    ]);*/
+
+
+
 $name = $request->input('name');
 echo "Name is :" .$name."<br>";
 $email = $request->input('email');
@@ -38,10 +46,8 @@ $city = $request->input('city');
 echo "City is :" .$city."<br>";
 
 DB::table('student')->insert(
-    ['name' => "$name",'email'=>"$email",'country'=>"$country",'city'=>"$city"]
-);
-$student=DB::table('student')->get();
-dd($student);
+    ['name' => "$name",'email'=>"$email",'country'=>"$country",'city'=>"$city"]);
+return redirect('studentlist');
 }
 public function Studentlist()
 {
@@ -64,13 +70,15 @@ public function Studentupdate()
 	$email_update=request()->email;
 	$country_update=request()->country;
 	$city_update=request()->city;
-    $edit=DB::table('student')->where('id',$id)->update(['name'=>$name_update,'email'=>$email_update,'country'=>$country_update,'city'=>$city_update]);
+    DB::table('student')->where('id',$id)->update(['name'=>$name_update,'email'=>$email_update,'country'=>$country_update,'city'=>$city_update]);
 	//dd($edit);
+	return redirect('studentlist');
 	
 }
 public function Studentdelete($id)
 {
 	$deletevalue=DB::table('student')->where('id','=',$id)->delete();
+	return redirect('studentlist');
 }
 
 
@@ -92,6 +100,7 @@ echo "tamil mark  is :" .$tamil."<br>";
 
 $total=$computer+$maths+$chemistry+$tamil;
 $result=DB::table('marklist')->insert(['student_id'=>"$student_id",'computer' => "$computer",'maths'=>"$maths",'chemistry'=>"$chemistry",'tamil'=>"$tamil",'total'=>"$total"]);
+return redirect('studentlist');
 }
 public function View($id)
 {
@@ -114,18 +123,17 @@ public function Updatemark()
 	$tamil_update=request()->tamil;
 	$total_update=$computer_update+$maths_update+$chemistry_update+$tamil_update;
     $listupdate=DB::table('marklist')->where('id',$id)->update(['student_id'=>$student_id,'computer'=>$computer_update,'maths'=>$maths_update,'chemistry'=>$chemistry_update,'tamil'=>$tamil_update,'total'=>$total_update]);
+return redirect('studentlist');
 }
 
 
-/*public function Rank()
+public function Rank()
 {
-   //$collection = collect(marklist::orderBy('total', 'DESC')->get());
-   //$data       = $collection->where('id', $this->id);
-   //$value      = $data->keys()->first() + 1;
-   $users = DB::table('marklist')->orderBy('total', 'desc')->pluck('id')->toArray();
-   $aaa['bbb']=$users;
-   return view('Ranking',$aaa);
-}*/
+$totals=DB::table('student')->join('marklist','student.id','=','marklist.student_id')->orderBy('total', 'desc')->get();
+$edit['rank']=$totals;
+return view('Ranking',$edit);
+}
+
 
 }
    
