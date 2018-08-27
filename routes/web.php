@@ -47,5 +47,8 @@ Route::get('rank','StudentController@Rank');
 Route::get('view/{id}','StudentController@View');
 Route::post('updatemark','StudentController@Updatemark');
 
-Route::get('validation','PostController@Validation');
+Route::get('validation','PostController@validation');
 Route::post('validationlist','PostController@validationlist');
+
+Route::get('session','UserController@session');
+Route::get('home','PostController@home');
