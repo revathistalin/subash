@@ -7,10 +7,14 @@ use App\Http\Controllers\Controller;
 
 class UserController extends Controller
 {
-	public function show(Request $request, $id)
+	public function home()
     {
-        $value = $request->session()->get('key');
+        return view('News/HomeNews');
 
   
+    }
+    public function dashboard()
+    {
+    	return view('News/Admin');
     }
 }

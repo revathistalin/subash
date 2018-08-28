@@ -49,6 +49,11 @@ Route::post('updatemark','StudentController@Updatemark');
 
 Route::get('validation','PostController@validation');
 Route::post('validationlist','PostController@validationlist');
-
 Route::get('session','UserController@session');
-Route::get('home','PostController@home');
+
+
+Route::get('home','UserController@home');
+Route::get('dashboard','UserController@dashboard');
+
+
+Route::get('home','UserController@home');
