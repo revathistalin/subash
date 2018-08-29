@@ -52,8 +52,23 @@ Route::post('validationlist','PostController@validationlist');
 Route::get('session','UserController@session');
 
 
-Route::get('home','UserController@home');
-Route::get('dashboard','UserController@dashboard');
-
 
 Route::get('home','UserController@home');
+Route::get('admin','UserController@Admin');
+
+Route::get('register','UserController@Register');
+Route::get('login','UserController@Login');
+Route::post('insert','UserController@Insert');
+Route::get('reset','UserController@Reset');
+Route::post('page','UserController@page');
+Route::post('send', 'EmailController@send');
+
+
+
+
+
+
+
+
+
+

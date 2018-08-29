@@ -25,7 +25,7 @@
             <div class="col-md-7">
                 <div class="feature_article_wrapper">
                     <div class="feature_article_img">
-                        <img class="img-responsive top_static_article_img" src="assets/img/feature-top.jpg"
+                        <img class="img-responsive top_static_article_img"src="{{url('assets/img/feature-top.jpg')}}"
                              alt="feature-top">
                     </div>
                     <!-- feature_article_img -->
@@ -66,7 +66,7 @@
             <div class="col-md-5">
                 <div class="feature_static_wrapper">
                     <div class="feature_article_img">
-                        <img class="img-responsive" src="assets/img/feature-static1.jpg" alt="feature-top">
+                        <img class="img-responsive"src="{{url('assets/img/feature-static1.jpg')}}" alt="feature-top">
                     </div>
                     <!-- feature_article_img -->
 
@@ -105,7 +105,7 @@
             <div class="col-md-5">
                 <div class="feature_static_last_wrapper">
                     <div class="feature_article_img">
-                        <img class="img-responsive" src="assets/img/feature-static2.jpg" alt="feature-top">
+                        <img class="img-responsive"src="{{url('assets/img/feature-static2.jpg')}}" alt="feature-top">
                     </div>
                     <!-- feature_article_img -->
 
@@ -165,7 +165,7 @@
             <div class="col-md-6">
                 <div class="top_article_img">
                     <a href="single.html" target="_self"><img class="img-responsive"
-                                                               src="assets/img/cat-mobi-left-1.jpg" alt="feature-top">
+                                                              src="{{url('assets/img/cat-mobi-left-1.jpg')}}" alt="feature-top">
                     </a>
                 </div>
                 <!----top_article_img------>
@@ -199,7 +199,7 @@
             <div class="col-md-6">
                 <div class="media">
                     <div class="media-left">
-                        <a href="#"><img class="media-object" src="assets/img/cat-mobi-sm1.jpg"
+                        <a href="#"><img class="media-object"src="{{url('assets/img/cat-mobi-sm1.jpg')}}"
                                          alt="Generic placeholder image"></a>
                     </div>
                     <div class="media-body">
@@ -217,7 +217,7 @@
                 </div>
                 <div class="media">
                     <div class="media-left">
-                        <a href="#"><img class="media-object" src="assets/img/cat-mobi-sm3.jpg"
+                        <a href="#"><img class="media-object"src="{{url('assets/img/cat-mobi-sm3.jpg')}}"
                                          alt="Generic placeholder image"></a>
                     </div>
                     <div class="media-body">
@@ -237,7 +237,7 @@
             <div class="col-md-6">
                 <div class="media">
                     <div class="media-left">
-                        <a href="#"><img class="media-object" src="assets/img/cat-mobi-sm2.jpg"
+                        <a href="#"><img class="media-object"src="{{url('assets/img/cat-mobi-sm2.jpg')}}"
                                          alt="Generic placeholder image"></a>
                     </div>
                     <div class="media-body">
@@ -255,7 +255,7 @@
                 </div>
                 <div class="media">
                     <div class="media-left">
-                        <a href="#"><img class="media-object" src="assets/img/cat-mobi-sm4.jpg"
+                        <a href="#"><img class="media-object"src="{{url('assets/img/cat-mobi-sm4.jpg')}}"
                                          alt="Generic placeholder image"></a>
                     </div>
                     <div class="media-body">
@@ -289,7 +289,7 @@
             <div class="col-md-6">
                 <div class="category_article_body">
                     <div class="top_article_img">
-                        <a href="single.html" target="_self"><img class="img-responsive" src="assets/img/tab_top1.jpg"
+                        <a href="single.html" target="_self"><img class="img-responsive"src="{{url('assets/img/tab_top1.jpg')}}"
                                                                    alt="feature-top">
                         </a>
                     </div>
@@ -329,7 +329,7 @@
                 <div class="category_article_body">
                     <div class="top_article_img">
                         <a href="single.html" target="_self">
-                            <img class="img-responsive" src="assets/img/tab_top2.jpg" alt="feature-top">
+                            <img class="img-responsive"src="{{url('assets/img/tab_top2.jpg')}}" alt="feature-top">
                         </a>
                     </div>
                     <!-- top_article_img -->
@@ -384,7 +384,7 @@
                 <div class="category_article_body">
                     <div class="top_article_img">
                         <a href="single.html" target="_self">
-                            <img class="img-responsive" src="assets/img/gad_top1.jpg" alt="feature-top">
+                            <img class="img-responsive"src="{{url('assets/img/gad_top1.jpg')}}" alt="feature-top">
                         </a>
                     </div>
                     <!-- top_article_img -->
@@ -417,7 +417,7 @@
                 <div class="category_article_list">
                     <div class="media">
                         <div class="media-left">
-                            <a href="#"><img class="media-object" src="assets/img/cat-mobi-sm1.jpg"
+                            <a href="#"><img class="media-object"src="{{url('assets/img/cat-mobi-sm1.jpg')}}"
                                              alt="Generic placeholder image"></a>
                         </div>
                         <div class="media-body">
@@ -433,7 +433,7 @@
                     </div>
                     <div class="media">
                         <div class="media-left">
-                            <a href="#"><img class="media-object" src="assets/img/cat-mobi-sm3.jpg"
+                            <a href="#"><img class="media-object"src="{{url('assets/img/cat-mobi-sm3.jpg')}}"
                                              alt="Generic placeholder image"></a>
                         </div>
                         <div class="media-body">
@@ -456,7 +456,7 @@
             <div class="col-md-6">
                 <div class="category_article_body">
                     <div class="top_article_img">
-                        <img class="img-responsive" src="assets/img/gad_top2.jpg" alt="feature-top">
+                        <img class="img-responsive"src="{{url('assets/img/gad_top2.jpg')}}" alt="feature-top">
                     </div>
                     <!-- top_article_img -->
 
@@ -508,7 +508,7 @@
             <div class="col-md-5">
                 <div class="top_article_img">
                     <a href="single.html" target="_self">
-                        <img class="img-responsive" src="assets/img/cam_left1.jpg" alt="feature-top">
+                        <img class="img-responsive"src="{{url('assets/img/cam_left1.jpg')}}" alt="feature-top">
                     </a>
                 </div>
                 <!-- top_article_img -->
@@ -552,7 +552,7 @@
             <div class="col-md-5">
                 <div class="top_article_img">
                     <a href="single.html" target="_self">
-                        <img class="img-responsive" src="assets/img/cam_left2.jpg" alt="feature-top">
+                        <img class="img-responsive"src="{{url('assets/img/cam_left2.jpg')}}" alt="feature-top">
                     </a>
                 </div>
                 <!-- top_article_img -->
@@ -592,7 +592,7 @@
             <div class="col-md-5">
                 <div class="top_article_img">
                     <a href="single.html" target="_self">
-                        <img class="img-responsive" src="assets/img/cam_left3.jpg" alt="feature-top">
+                        <img class="img-responsive"src="{{url('assets/img/cam_left3.jpg')}}" alt="feature-top">
                     </a>
                 </div>
                 <!-- media_social -->
@@ -655,7 +655,7 @@
                 <div class="category_article_body">
                     <div class="top_article_img">
                         <a href="single.html" target="_self">
-                            <img class="img-responsive" src="assets/img/design_top1.jpg" alt="feature-top">
+                            <img class="img-responsive"src="{{url('assets/img/design_top1.jpg')}}" alt="feature-top">
                         </a>
                     </div>
                     <!-- top_article_img -->
@@ -692,7 +692,7 @@
                 <div class="category_article_body">
                     <div class="top_article_img">
                         <a href="single.html" target="_self">
-                            <img class="img-responsive" src="assets/img/design_top2.jpg" alt="feature-top">
+                            <img class="img-responsive"src="{{url('assets/img/design_top2.jpg')}}" alt="feature-top">
                         </a>
                     </div>
                     <!-- top_article_img -->
@@ -737,7 +737,7 @@
                 <div class="category_article_body">
                     <div class="top_article_img">
                         <a href="single.html" target="_self">
-                            <img class="img-responsive" src="assets/img/design_top3.jpg" alt="feature-top">
+                            <img class="img-responsive"src="{{url('assets/img/design_top3.jpg')}}" alt="feature-top">
                         </a>
                     </div>
                     <!-- top_article_img -->
@@ -773,7 +773,7 @@
             <div class="col-md-6">
                 <div class="category_article_body">
                     <div class="top_article_img">
-                        <img class="img-responsive" src="assets/img/design_top4.jpg" alt="feature-top">
+                        <img class="img-responsive"src="{{url('assets/img/design_top4.jpg')}}" alt="feature-top">
                     </div>
                     <!-- top_article_img -->
 
@@ -823,7 +823,7 @@
     </div>
     <div class="media">
         <div class="media-left">
-            <a href="#"><img class="media-object" src="assets/img/pop_right1.jpg" alt="Generic placeholder image"></a>
+            <a href="#"><img class="media-object"src="{{url('assets/img/pop_right1.jpg')}}" alt="Generic placeholder image"></a>
         </div>
         <div class="media-body">
             <h3 class="media-heading">
@@ -842,7 +842,7 @@
     </div>
     <div class="media">
         <div class="media-left">
-            <a href="#"><img class="media-object" src="assets/img/pop_right2.jpg" alt="Generic placeholder image"></a>
+            <a href="#"><img class="media-object"src="{{url('assets/img/pop_right2.jpg')}}" alt="Generic placeholder image"></a>
         </div>
         <div class="media-body">
             <h3 class="media-heading">
@@ -862,7 +862,7 @@
     </div>
     <div class="media">
         <div class="media-left">
-            <a href="#"><img class="media-object" src="assets/img/pop_right3.jpg" alt="Generic placeholder image"></a>
+            <a href="#"><img class="media-object"src="{{url('assets/img/pop_right3.jpg')}}" alt="Generic placeholder image"></a>
         </div>
         <div class="media-body">
             <h3 class="media-heading">
@@ -882,7 +882,7 @@
     </div>
     <div class="media">
         <div class="media-left">
-            <a href="#"><img class="media-object" src="assets/img/pop_right4.jpg" alt="Generic placeholder image"></a>
+            <a href="#"><img class="media-object"src="{{url('assets/img/pop_right4.jpg')}}" alt="Generic placeholder image"></a>
         </div>
         <div class="media-body">
             <h3 class="media-heading">
@@ -905,15 +905,15 @@
 <!-- Popular News -->
 
 <div class="widget hidden-xs m30">
-    <img class="img-responsive adv_img" src="assets/img/right_add1.jpg" alt="add_one">
-    <img class="img-responsive adv_img" src="assets/img/right_add2.jpg" alt="add_one">
-    <img class="img-responsive adv_img" src="assets/img/right_add3.jpg" alt="add_one">
-    <img class="img-responsive adv_img" src="assets/img/right_add4.jpg" alt="add_one">
+    <img class="img-responsive adv_img"src="{{url('assets/img/right_add1.jpg')}}" alt="add_one">
+    <img class="img-responsive adv_img"src="{{url('assets/img/right_add2.jpg')}}" alt="add_one">
+    <img class="img-responsive adv_img"src="{{url('assets/img/right_add3.jpg')}}" alt="add_one">
+    <img class="img-responsive adv_img"src="{{url('assets/img/right_add4.jpg')}}" alt="add_one">
 </div>
 <!-- Advertisement -->
 
 <div class="widget hidden-xs m30">
-    <img class="img-responsive widget_img" src="assets/img/right_add5.jpg" alt="add_one">
+    <img class="img-responsive widget_img"src="{{url('assets/img/right_add5.jpg')}}" alt="add_one">
 </div>
 <!-- Advertisement -->
 
@@ -923,7 +923,7 @@
     </div>
     <div class="media">
         <div class="media-left">
-            <a href="#"><img class="media-object" src="assets/img/pop_right1.jpg" alt="Generic placeholder image"></a>
+            <a href="#"><img class="media-object"src="{{url('assets/img/pop_right1.jpg')}}" alt="Generic placeholder image"></a>
         </div>
         <div class="media-body">
             <h3 class="media-heading">
@@ -941,7 +941,7 @@
     </div>
     <div class="media">
         <div class="media-left">
-            <a href="#"><img class="media-object" src="assets/img/pop_right2.jpg" alt="Generic placeholder image"></a>
+            <a href="#"><img class="media-object"src="{{url('assets/img/pop_right2.jpg')}}" alt="Generic placeholder image"></a>
         </div>
         <div class="media-body"><h3 class="media-heading"><a href="single.html" target="_self">Samsung is the best
             mobile in the android market.</a></h3> <span class="rating">
@@ -954,7 +954,7 @@
     </div>
     <div class="media">
         <div class="media-left">
-            <a href="#"><img class="media-object" src="assets/img/pop_right3.jpg" alt="Generic placeholder image"></a>
+            <a href="#"><img class="media-object"src="{{url('assets/img/pop_right3.jpg')}}" alt="Generic placeholder image"></a>
         </div>
         <div class="media-body">
             <h3 class="media-heading">
@@ -970,7 +970,7 @@
     </div>
     <div class="media">
         <div class="media-left">
-            <a href="#"><img class="media-object" src="assets/img/pop_right4.jpg" alt="Generic placeholder image"></a>
+            <a href="#"><img class="media-object"src="{{url('assets/img/pop_right4.jpg')}}" alt="Generic placeholder image"></a>
         </div>
         <div class="media-body">
             <h3 class="media-heading">
@@ -989,7 +989,7 @@
 <!-- Reviews News -->
 
 <div class="widget hidden-xs m30">
-    <img class="img-responsive widget_img" src="assets/img/right_add6.jpg" alt="add_one">
+    <img class="img-responsive widget_img"src="{{url('assets/img/right_add6.jpg')}}" alt="add_one">
 </div>
 <!-- Advertisement -->
 
@@ -999,7 +999,7 @@
     </div>
     <div class="media">
         <div class="media-left">
-            <a href="#"><img class="media-object" src="assets/img/pop_right1.jpg" alt="Generic placeholder image"></a>
+            <a href="#"><img class="media-object"src="{{url('assets/img/pop_right1.jpg')}}" alt="Generic placeholder image"></a>
         </div>
         <div class="media-body">
             <h3 class="media-heading">
@@ -1013,7 +1013,7 @@
     </div>
     <div class="media">
         <div class="media-left">
-            <a href="#"><img class="media-object" src="assets/img/pop_right2.jpg" alt="Generic placeholder image"></a>
+            <a href="#"><img class="media-object"src="{{url('assets/img/pop_right2.jpg')}}" alt="Generic placeholder image"></a>
         </div>
         <div class="media-body">
             <h3 class="media-heading">
@@ -1027,7 +1027,7 @@
     </div>
     <div class="media">
         <div class="media-left">
-            <a href="#"><img class="media-object" src="assets/img/pop_right3.jpg" alt="Generic placeholder image"></a>
+            <a href="#"><img class="media-object"src="{{url('assets/img/pop_right3.jpg')}}" alt="Generic placeholder image"></a>
         </div>
         <div class="media-body">
             <h3 class="media-heading">
@@ -1041,7 +1041,7 @@
     </div>
     <div class="media">
         <div class="media-left">
-            <a href="#"><img class="media-object" src="assets/img/pop_right4.jpg" alt="Generic placeholder image"></a>
+            <a href="#"><img class="media-object"src="{{url('assets/img/pop_right4.jpg')}}" alt="Generic placeholder image"></a>
         </div>
         <div class="media-body">
             <h3 class="media-heading">
@@ -1062,7 +1062,7 @@
     <div class="widget_title widget_black">
         <h2><a href="#">Editor Corner</a></h2>
     </div>
-    <div class="widget_body"><img class="img-responsive left" src="assets/img/editor.jpg"
+    <div class="widget_body"><img class="img-responsive left"src="{{url('assets/img/editor.jpg')}}"
                                   alt="Generic placeholder image">
 
         <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C
@@ -1077,10 +1077,10 @@
 <!-- Editor News -->
 
 <div class="widget hidden-xs m30">
-    <img class="img-responsive add_img" src="assets/img/right_add7.jpg" alt="add_one">
-    <img class="img-responsive add_img" src="assets/img/right_add7.jpg" alt="add_one">
-    <img class="img-responsive add_img" src="assets/img/right_add7.jpg" alt="add_one">
-    <img class="img-responsive add_img" src="assets/img/right_add7.jpg" alt="add_one">
+    <img class="img-responsive add_img"src="{{url('assets/img/right_add7.jpg')}}" alt="add_one">
+    <img class="img-responsive add_img"src="{{url('assets/img/right_add7.jpg')}}" alt="add_one">
+    <img class="img-responsive add_img"src="{{url('assets/img/right_add7.jpg')}}" alt="add_one">
+    <img class="img-responsive add_img"src="{{url('assets/img/right_add7.jpg')}}" alt="add_one">
 </div>
 <!--Advertisement -->
 
@@ -1088,7 +1088,7 @@
     <div class="widget_title widget_black">
         <h2><a href="#">Readers Corner</a></h2>
     </div>
-    <div class="widget_body"><img class="img-responsive left" src="assets/img/reader.jpg"
+    <div class="widget_body"><img class="img-responsive left"src="{{url('assets/img/reader.jpg')}}"
                                   alt="Generic placeholder image">
 
         <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C
@@ -1103,7 +1103,7 @@
 <!--  Readers Corner News -->
 
 <div class="widget hidden-xs m30">
-    <img class="img-responsive widget_img" src="assets/img/podcast.jpg" alt="add_one">
+    <img class="img-responsive widget_img"src="{{url('assets/img/podcast.jpg')}}" alt="add_one">
 </div>
 <!--Advertisement-->
 </div>
@@ -1124,7 +1124,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="embed-responsive embed-responsive-4by3">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/MJ-jbFdUPns"
+                        <iframe class="embed-responsive-item"src="{{url('https://www.youtube.com/embed/MJ-jbFdUPns"
                                 frameborder="0" allowfullscreen></iframe>
                     </div>
                     <!-- embed-responsive -->
@@ -1134,12 +1134,12 @@
 
                 <div class="col-md-3">
                     <div class="embed-responsive embed-responsive-4by3">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/h5Jni-vy_5M"></iframe>
+                        <iframe class="embed-responsive-item"src="{{url('https://www.youtube.com/embed/h5Jni-vy_5M"></iframe>
                     </div>
                     <!-- embed-responsive -->
 
                     <div class="embed-responsive embed-responsive-4by3 m16">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wQ5Gj0UB_R8"></iframe>
+                        <iframe class="embed-responsive-item"src="{{url('https://www.youtube.com/embed/wQ5Gj0UB_R8"></iframe>
                     </div>
                     <!-- embed-responsive -->
 
@@ -1148,12 +1148,12 @@
 
                 <div class="col-md-3">
                     <div class="embed-responsive embed-responsive-4by3">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/UPvJXBI_3V4"></iframe>
+                        <iframe class="embed-responsive-item"src="{{url('https://www.youtube.com/embed/UPvJXBI_3V4"></iframe>
                     </div>
                     <!-- embed-responsive -->
 
                     <div class="embed-responsive embed-responsive-4by3 m16">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/DTCtj5Wz6BM"></iframe>
+                        <iframe class="embed-responsive-item"src="{{url('https://www.youtube.com/embed/DTCtj5Wz6BM"></iframe>
                     </div>
                     <!-- embed-responsive -->
 
@@ -1201,7 +1201,7 @@
                 <div class="footer_widget_title"><h3><a href="category.html" target="_self">About Tech</a></h3></div>
                 <div class="logo footer-logo">
                     <a title="fontanero" href="index.html">
-                        <img src="assets/img/tech_about.jpg" alt="technews">
+                        <imgsrc="{{url('assets/img/tech_about.jpg')}}" alt="technews">
                     </a>
 
                     <p>Competently conceptualize go forward testing procedures and B2B expertise. Phosfluorescently
@@ -1253,7 +1253,7 @@
                 </div>
                 <div class="media">
                     <div class="media-left">
-                        <a href="#"><img class="media-object" src="assets/img/editor_pic1.jpg"
+                        <a href="#"><img class="media-object"src="{{url('assets/img/editor_pic1.jpg')}}"
                                          alt="Generic placeholder image"></a>
                     </div>
                     <div class="media-body">
@@ -1271,7 +1271,7 @@
                 </div>
                 <div class="media">
                     <div class="media-left">
-                        <a href="#"><img class="media-object" src="assets/img/editor_pic2.jpg"
+                        <a href="#"><img class="media-object"src="{{url('assets/img/editor_pic2.jpg')}}"
                                          alt="Generic placeholder image"></a>
                     </div>
                     <div class="media-body">
@@ -1289,7 +1289,7 @@
                 </div>
                 <div class="media">
                     <div class="media-left">
-                        <a href="#"><img class="media-object" src="assets/img/editor_pic3.jpg"
+                        <a href="#"><img class="media-object"src="{{url('assets/img/editor_pic3.jpg')}}"
                                          alt="Generic placeholder image"></a>
                     </div>
                     <div class="media-body">
@@ -1300,7 +1300,7 @@
                             <i class="fa fa-star"></i> 
                             <i class="fa fa-star"></i> 
                             <i class="fa fa-star"></i> 
-                            <i class="fa fa-star"></i> 
+                            <i class="fa fa-star
                             <i class="fa fa-star-half-full"></i> 
                         </span>
                     </div>
@@ -1311,18 +1311,18 @@
                     <h3><a href="category.html" target="_self">Tech Photos</a></h3>
                 </div>
                 <div class="widget_photos">
-                    <img class="img-thumbnail" src="assets/img/tech_photo1.jpg" alt="Tech Photos">
-                    <img class="img-thumbnail" src="assets/img/tech_photo2.jpg" alt="Tech Photos">
-                    <img class="img-thumbnail" src="assets/img/tech_photo3.jpg" alt="Tech Photos">
-                    <img class="img-thumbnail" src="assets/img/tech_photo4.jpg" alt="Tech Photos">
-                    <img class="img-thumbnail" src="assets/img/tech_photo5.jpg" alt="Tech Photos">
-                    <img class="img-thumbnail" src="assets/img/tech_photo6.jpg" alt="Tech Photos">
-                    <img class="img-thumbnail" src="assets/img/tech_photo7.jpg" alt="Tech Photos">
-                    <img class="img-thumbnail" src="assets/img/tech_photo8.jpg" alt="Tech Photos">
-                    <img class="img-thumbnail" src="assets/img/tech_photo9.jpg" alt="Tech Photos">
-                    <img class="img-thumbnail" src="assets/img/tech_photo10.jpg" alt="Tech Photos">
-                    <img class="img-thumbnail" src="assets/img/tech_photo11.jpg" alt="Tech Photos">
-                    <img class="img-thumbnail" src="assets/img/tech_photo12.jpg" alt="Tech Photos">
+                    <img class="img-thumbnail"src="{{url('assets/img/tech_photo1.jpg')}}" alt="Tech Photos">
+                    <img class="img-thumbnail"src="{{url('assets/img/tech_photo2.jpg')}}" alt="Tech Photos">
+                    <img class="img-thumbnail"src="{{url('assets/img/tech_photo3.jpg')}}" alt="Tech Photos">
+                    <img class="img-thumbnail"src="{{url('assets/img/tech_photo4.jpg')}}" alt="Tech Photos">
+                    <img class="img-thumbnail"src="{{url('assets/img/tech_photo5.jpg')}}" alt="Tech Photos">
+                    <img class="img-thumbnail"src="{{url('assets/img/tech_photo6.jpg')}}" alt="Tech Photos">
+                    <img class="img-thumbnail"src="{{url('assets/img/tech_photo7.jpg')}}" alt="Tech Photos">
+                    <img class="img-thumbnail"src="{{url('assets/img/tech_photo8.jpg')}}" alt="Tech Photos">
+                    <img class="img-thumbnail"src="{{url('assets/img/tech_photo9.jpg')}}" alt="Tech Photos">
+                    <img class="img-thumbnail"src="{{url('assets/img/tech_photo10.jpg')}}" alt="Tech Photos">
+                    <img class="img-thumbnail"src="{{url('assets/img/tech_photo11.jpg')}}" alt="Tech Photos">
+                    <img class="img-thumbnail"src="{{url('assets/img/tech_photo12.jpg')}}" alt="Tech Photos">
                 </div>
 
             </div>

@@ -36,14 +36,14 @@
                 <div class="col-md-4">
                     <div class="right_section">
                         <ul class="nav navbar-nav">
-                            <li><a href="#">Login</a></li>
+                            <li><a href="{{url('home')}}">Login</a></li>
                             <li><a href="#">Register</a></li>
                             <li class="dropdown lang">
                                 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
                                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">En <i
                                         class="fa fa-angle-down"></i></button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                    <li><a href="#">Bn</a></li>
+                                    <li><a href="{{url('home')}}">Bn</a></li>
                                 </ul>
                             </li>
                         </ul>
