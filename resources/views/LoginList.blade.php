@@ -12,7 +12,7 @@
 		<p><input type="checkbox" name="remember" /> Remember me
 	</p>
 		<p><input type="submit" value="Login"></span></p>
-      <tr><td><a href="{{url('reset')}}">Reset password</a></td></tr>
+      <tr><td><a href="{{url('forget')}}">Forget password</a></td></tr>
 </form>
 </html>
 

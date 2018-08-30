@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use DB;
+use Mail;
 class UserController extends Controller
 {
 	public function home()
@@ -39,9 +40,9 @@ $password = $request->input('password');
 DB::table('user')->insert(['name' => $name,'email'=>$email,'password'=>crc32($password)]);
 
 }
-public function Reset()
+public function Forget()
 {
-	return view('Reset');
+	return view('Forget');
 }
 public function page(Request $request)
 {
@@ -56,21 +57,54 @@ public function page(Request $request)
 }
 public function send(Request $request)
 {
-        $title = $request->input('title');
-        $content = $request->input('content');
-
-        Mail::send('email', ['title' => $title, 'content' => $content], function ($message)
+        $Email=$request->input('email');
+        //dd($Email
+        $time_from = date("Y-m-d H:i", strtotime("+10 min"));
+        $data=DB::table('user')->where('email','=',$Email)->update(['rpToken'=>rand(),'rpToken_created_at'=>$time_from] );
+       if(!empty($Email))
+       { 
+        $value=DB::table('user')->where('email','=',$Email)->select('rpToken')->first();
+        //$title = $request->input('title');
+        $rpToken['value'] =$value;
+        Mail::send('email', ['value'=>$value], function ($message)
         {
+          $Email=request()->email;
 
-            $message->from('revathi.stalin@kenhike.com', 'revathi');
+            $message->from('dineshmuthukumar.g@yopmail.com', 'revathi');
 
-            $message->to('revathi.stalin@kenhike.com');
+            $message->to($Email)->subject('Forget Password Notification');
 
         });
 
 
-       return response()->json(['message' => 'Request completed']);
+       //return response()->json(['message' => 'Request completed']);
+       return redirect('login');
     }
+    //retutn view('LoginList');
+  }
+public function Password($rpToken)
+
+{
+  $time=date("Y-m-d H:i");
+  $conform=DB::table('user')->where('rpToken','=',$rpToken)->select('rpToken_created_at','rpToken')->first();
+  $method=$conform->rpToken_created_at;
+  $rptoken['rpToken']=$rpToken;
+  if(strtotime($method)>=strtotime($time))
+  {
+    return view('ConformPassword',$rptoken);
+  }
+  return redirect('login')->withErrors(['msg','your link is expired']);
+}
+
+
+public function Newpassword(Request $request)
+{
+  $rpToken=$request->input('rpToken');
+  $Password=$request->input('password');
+  $change=DB::table('user')->where('rpToken','=',$rpToken)->update(['password'=>crc32($Password)]);
+}
+
+
 
 }
 

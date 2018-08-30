@@ -59,9 +59,11 @@ Route::get('admin','UserController@Admin');
 Route::get('register','UserController@Register');
 Route::get('login','UserController@Login');
 Route::post('insert','UserController@Insert');
-Route::get('reset','UserController@Reset');
+Route::get('forget','UserController@Forget');
 Route::post('page','UserController@page');
-Route::post('send', 'EmailController@send');
+Route::post('send', 'UserController@send');
+Route::get('password/{rpToken}','UserController@Password');
+Route::post('newpassword','UserController@Newpassword');
 
 
 
