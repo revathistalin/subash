@@ -36,8 +36,8 @@
                 <div class="col-md-4">
                     <div class="right_section">
                         <ul class="nav navbar-nav">
-                            <li><a href="{{url('home')}}">Login</a></li>
-                            <li><a href="#">Register</a></li>
+                            <li><a href="{{url('login')}}">Login</a></li>
+                            <li><a href="{{url('register')}}">Register</a></li>
                             <li class="dropdown lang">
                                 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
                                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">En <i
@@ -94,7 +94,7 @@
                             <li class="active"><a href="index.html">News</a></li>
                             <li><a href="category.html">Mobile</a></li>
                             <li><a href="blog.html">Tablet</a></li>
-                            <li><a href="blog.html">Gadgets</a></li>
+                            <li><a href="single.html">Gadgets</a></li>
                             <li><a href="blog.html">Camera</a></li>
                             <li><a href="blog.html">Design</a></li>
                             <li class="dropdown m-menu-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">More

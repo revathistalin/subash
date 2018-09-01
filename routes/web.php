@@ -54,7 +54,7 @@ Route::get('session','UserController@session');
 
 
 Route::get('home','UserController@home');
-Route::get('admin','UserController@Admin');
+Route::get('admin','AdminController@Admin');
 
 Route::get('register','UserController@Register');
 Route::get('login','UserController@Login');
@@ -64,8 +64,20 @@ Route::post('page','UserController@page');
 Route::post('send', 'UserController@send');
 Route::get('password/{rpToken}','UserController@Password');
 Route::post('newpassword','UserController@Newpassword');
+Route::get('Map','AdminController@Map');
+Route::get('updateprofile','AdminController@Updateprofile');
+Route::post('Updatevalue','AdminController@Updatevalue');
+Route::get('chart','AdminController@Chart');
+Route::get('resetpassword','AdminController@Resetpassword');
+Route::post('resetvalue','AdminController@Resetvalue');
+Route::get('prodect','AdminController@Product');
+
+Route::get('relation','AdminController@Relation');
+Route::post('data','AdminController@Data');
 
 
+Route::get('user','AdminController@User');
+Route::get('new/{id}','AdminController@New');
 
 
 

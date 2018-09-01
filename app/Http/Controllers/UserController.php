@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use DB;
 use Mail;
+use validator;
+use Session;
 class UserController extends Controller
 {
 	public function home()
@@ -23,6 +25,7 @@ class UserController extends Controller
 
    public function Register()
    {
+         
    	    return view('Register');
    }
  
@@ -33,12 +36,11 @@ class UserController extends Controller
  
 public function Insert(Request $request)
 {
-
 $name = $request->input('name');
 $email = $request->input('email');
 $password = $request->input('password');
-DB::table('user')->insert(['name' => $name,'email'=>$email,'password'=>crc32($password)]);
-
+$value=DB::table('user')->insert(['name' => $name,'email'=>$email,'password'=>crc32($password)]);
+return redirect('home');
 }
 public function Forget()
 {
@@ -46,19 +48,28 @@ public function Forget()
 }
 public function page(Request $request)
 {
-	$email=$request->input('email');
+  
+  $name=$request->input('name');
+  $email=$request->input('email');
 	$password=$request->input('password');
-	$new=DB::table('user')->select('email','password')->where('email','=',$email)->where('password','=',crc32($password))->first();
-	if(!$new)
+	$new=DB::table('user')->select('name','email','rpToken')->where('email','=',$email)->where('password','=',crc32($password))->first();
+	$name=$new->name;
+  $email=$new->email;
+  $rpToken=$new->rpToken;
+  Session::put('name',$name);
+  Session::put('email',$email);
+  Session::put('rpToken',$rpToken);
+  if(!$new)
 	{
-		return view('News/HomeNews');
+		return redirect('home');
 	}
-	    return view('Dashboard');
+      
+	    return redirect('admin');
 }
 public function send(Request $request)
-{
+{ 
+  
         $Email=$request->input('email');
-        //dd($Email
         $time_from = date("Y-m-d H:i", strtotime("+10 min"));
         $data=DB::table('user')->where('email','=',$Email)->update(['rpToken'=>rand(),'rpToken_created_at'=>$time_from] );
        if(!empty($Email))
@@ -80,7 +91,7 @@ public function send(Request $request)
        //return response()->json(['message' => 'Request completed']);
        return redirect('login');
     }
-    //retutn view('LoginList');
+    
   }
 public function Password($rpToken)
 
@@ -93,7 +104,7 @@ public function Password($rpToken)
   {
     return view('ConformPassword',$rptoken);
   }
-  return redirect('login')->withErrors(['msg','your link is expired']);
+  return redirect('login')->with('msg','your link is expired');
 }
 
 
@@ -102,7 +113,10 @@ public function Newpassword(Request $request)
   $rpToken=$request->input('rpToken');
   $Password=$request->input('password');
   $change=DB::table('user')->where('rpToken','=',$rpToken)->update(['password'=>crc32($Password)]);
+
+  return redirect('admin');
 }
+
 
 
 
