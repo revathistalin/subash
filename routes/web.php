@@ -80,8 +80,16 @@ Route::get('user','AdminController@User');
 Route::get('new/{id}','AdminController@New');
 
 
-
-
+Route::get('categorylist','AdminController@Categorylist');
+Route::post('categoryinsert','AdminController@Categoryinsert');
+Route::get('categoryview','AdminController@Categoryview');
+Route::get('link/{id}','AdminController@Link');
+Route::post('updatelist','AdminController@Updatelist');
+Route::get('deletelist/{id}','AdminController@Deletelist');
+Route::get('insert','AdminController@Insert');
+Route::post('insertlist','AdminController@Insertlist');
+Route::get('post','AdminController@Post');
+Route::get('postinsert/{id}','AdminController@Postinsert');
 
 
 

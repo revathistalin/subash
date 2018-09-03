@@ -44,6 +44,14 @@
                                 <i class="fas fa-table"></i>user</a>
                         </li>
                         <li>
+                            <a href="{{url('post')}}">
+                                <i class="fas fa-table"></i>post</a>
+                        </li>
+                        <li>
+                            <a href="{{url('categoryview')}}">
+                                <i class="fas fa-table"></i>category</a>
+                        </li>
+                        <li>
                             <a href="form.html">
                                 <i class="far fa-check-square"></i>Forms</a>
                         </li>
@@ -91,6 +99,14 @@
                         <li>
                             <a href="{{url('user')}}">
                                 <i class="fas fa-table"></i>User</a>
+                       </li>
+                       <li>
+                            <a href="{{url('post')}}">
+                                <i class="fas fa-table"></i>post</a>
+                        </li>
+                       <li>
+                            <a href="{{url('categoryview')}}">
+                                <i class="fas fa-table"></i>category</a>
                         </li>
                         <li>
                             <a href="form.html">
