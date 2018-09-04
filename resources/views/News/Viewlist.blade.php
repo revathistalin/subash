@@ -27,7 +27,7 @@
 <th><font color='Red'>Title</font></th>
 </tr>
 
-@foreach($value as $user)
+@foreach($list as $user)
 <tr>
 <td><a href="{{url("/postinsert/$user->id")}}">{{$user->id}}</td>
 <td>{{$user->title}}</td>

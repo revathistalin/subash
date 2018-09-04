@@ -67,13 +67,14 @@ class AdminController extends Controller
     public function New($id)
     {
     	$input=DB::table('user')->where('id','=',$id)->select('id','name','email')->first();
-    	$details['input']=$input;
+        $details['input']=$input;
     	$output=DB::table('role')->where('id','=',$id)->select('name')->first();
     	if(!$output)
         {
             return view('News/Change',$details);
         }
         $output=$output->name;
+
 
         if(empty($output))
         {
@@ -154,13 +155,55 @@ class AdminController extends Controller
     public function Post()
     {
         $value=DB::table('post')->get();
-        $deta['value']=$value;
-        return view('News/Viewlist',$deta);
+        $data['list']=$value;
+        return view('News/Viewlist',$data);
     }
     public function Postinsert($id)
     {
+        $order=DB::table('categories')->get();
+        //$order['features']=$order;
+
+        $output=DB::table('post')->where('id','=',$id)->select('id','title','body')->first();
+        $data['output']=$output;
+        $data['order']=$order;
+        $input=DB::table('categories')->where('id','=',$id)->select('name')->first();
+        if($input)
+        {
+            return view('News/Resultupdate',$data);
+        }
+        $input=$input->name;
+        if(empty($input))
+        {
+            $input="";
+            return view('News/Resultupdate',$data,['name'=>$input]);
+        }
+     }   
         
+        
+    public function Updateresult(Request $request)
+    {
+        $post_id=$request->input('id');
+        
+        $categories_id=$request->input('name');
+    //dd($result);
+        foreach($categories_id as $value)
+        {
+        echo $value;
+    
+            $add=DB::table('categories_post')->where('post_id','=',$post_id)->get();
+
+        if($add)
+            {
+            DB::table('categories_post')->where('post_id','=',$post_id)->update(['categories_id'=>$value]);
+        
+            }
+           DB::table('categories_post')->insert(['categories_id'=>$value,'post_id'=>$post_id]);
+    
+        }
     }
+
+
+
 }
 
 

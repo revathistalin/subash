@@ -90,6 +90,9 @@ Route::get('insert','AdminController@Insert');
 Route::post('insertlist','AdminController@Insertlist');
 Route::get('post','AdminController@Post');
 Route::get('postinsert/{id}','AdminController@Postinsert');
+Route::post('updateresult','AdminController@Updateresult');
+
+
 
 
 
