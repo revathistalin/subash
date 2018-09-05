@@ -161,8 +161,6 @@ class AdminController extends Controller
     public function Postinsert($id)
     {
         $order=DB::table('categories')->get();
-        //$order['features']=$order;
-
         $output=DB::table('post')->where('id','=',$id)->select('id','title','body')->first();
         $data['output']=$output;
         $data['order']=$order;
@@ -185,24 +183,31 @@ class AdminController extends Controller
         $post_id=$request->input('id');
         
         $categories_id=$request->input('name');
-    //dd($result);
-        foreach($categories_id as $value)
-        {
-        echo $value;
     
             $add=DB::table('categories_post')->where('post_id','=',$post_id)->get();
-
-        if($add)
+            
+            if($add)
             {
-            DB::table('categories_post')->where('post_id','=',$post_id)->update(['categories_id'=>$value]);
-        
+             
+             $deletevalue=DB::table('categories_post')->where('post_id','=',$post_id)->delete();
+
             }
-           DB::table('categories_post')->insert(['categories_id'=>$value,'post_id'=>$post_id]);
-    
-        }
-    }
+            foreach($categories_id as $value)
+            {
+            $insertvalue=DB::table('categories_post')->insert(['categories_id'=>$value,'post_id'=>$post_id]);
+       
+            }
+    }  
+   
+    /*public function Displaylist()
+    {
+      $list=DB::table('categories_post')->join('categories','categories_post.categories_id','=','categories.id')
+                                        ->join('post','categories_post.post_id','=','post.id')
+                                        ->select('post.*','categories.name')->get();
 
-
+      $details['list']=$list;
+     
+     }*/
 
 }
 

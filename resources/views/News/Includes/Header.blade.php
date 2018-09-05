@@ -97,6 +97,14 @@
                             <li><a href="single.html">Gadgets</a></li>
                             <li><a href="blog.html">Camera</a></li>
                             <li><a href="blog.html">Design</a></li>
+                            
+                            
+                                @foreach($value as $values)
+                               <li><input type="hidden" name="categories" value="{{$values->id}}"><a href="{{url("/test/$values->id")}}">{{$values->name}}</li>
+                                @endforeach
+                
+                        
+                            
                             <li class="dropdown m-menu-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">More
                                 <span><i class="fa fa-angle-down"></i></span></a>
                                 <ul class="dropdown-menu">
@@ -134,7 +142,7 @@
                                                 <li><a href="#">Responsive Design</a></li>
                                                 <li><a href="#">Pixel Perfect Graphics</a></li>
                                             </ul>
-                                        </div>
+                                            </div>
                                     </li>
                                 </ul>
                             </li>

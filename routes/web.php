@@ -93,7 +93,4 @@ Route::get('postinsert/{id}','AdminController@Postinsert');
 Route::post('updateresult','AdminController@Updateresult');
 
 
-
-
-
-
+Route::get('test/{id}','UserController@Test');

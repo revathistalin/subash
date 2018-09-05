@@ -1,3 +1,11 @@
+<?php 
+echo $list;
+?>
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,12 +33,14 @@
 <tr>
 <th><font color='Red'>Id</font></th>
 <th><font color='Red'>Title</font></th>
+<th><font color='Red'>Image</font></th>
 </tr>
 
 @foreach($list as $user)
 <tr>
 <td><a href="{{url("/postinsert/$user->id")}}">{{$user->id}}</td>
 <td>{{$user->title}}</td>
+<td>{{$user->image}}</td>
 </tr>
 
 @endforeach                           

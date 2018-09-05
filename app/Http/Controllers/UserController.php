@@ -12,14 +12,34 @@ class UserController extends Controller
 {
 	public function home()
     {
-        return view('News/HomeNews');
-
-  
+       $value=DB::table('categories')->get();
+        $data['value']=$value;
+        return view('News/News',$data);
     }
+  public function Test($id)
+  {
+        $list=DB::table('categories_post')->join('categories','categories_post.categories_id','=','categories.id')
+                                        ->join('post','categories_post.post_id','=','post.id')
+                                        ->select('post.*','categories.name')
+                                        ->where('categories_id','=',$id)
+                                        ->get();
+                                        
+
+         $data['output']=$list;                  
+
+        
+       return view('News/Display',$data);
+
+      
+  } 
+
+
+
+
     public function Admin()
     {
-
-    	 return view('Dashboard');
+       
+    	 return view('News/Dashboard');
  
    }
 
@@ -116,6 +136,8 @@ public function Newpassword(Request $request)
 
   return redirect('admin');
 }
+
+
 
 
 
