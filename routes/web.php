@@ -56,6 +56,9 @@ Route::get('session','UserController@session');
 Route::get('home','UserController@home');
 Route::get('admin','AdminController@Admin');
 
+Route::get('category','UserController@Category');
+
+
 Route::get('register','UserController@Register');
 Route::get('login','UserController@Login');
 Route::post('insert','UserController@Insert');
@@ -94,3 +97,4 @@ Route::post('updateresult','AdminController@Updateresult');
 
 
 Route::get('test/{id}','UserController@Test');
+

@@ -199,15 +199,7 @@ class AdminController extends Controller
             }
     }  
    
-    /*public function Displaylist()
-    {
-      $list=DB::table('categories_post')->join('categories','categories_post.categories_id','=','categories.id')
-                                        ->join('post','categories_post.post_id','=','post.id')
-                                        ->select('post.*','categories.name')->get();
-
-      $details['list']=$list;
-     
-     }*/
+  
 
 }
 

@@ -4,7 +4,7 @@
 @foreach($output as $outputs)
 {{$outputs->title}}
 {{$outputs->body}}
-{{$outputs->image}}
+<img src='{{url("photo/$outputs->image")}}' width="50" height="50">
 @endforeach
   
 

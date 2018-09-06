@@ -11,9 +11,11 @@ use Session;
 class UserController extends Controller
 {
 	public function home()
-    {
+    {  
+       $output=DB::table('post')->get();
        $value=DB::table('categories')->get();
         $data['value']=$value;
+        $data['output']=$output;
         return view('News/News',$data);
     }
   public function Test($id)

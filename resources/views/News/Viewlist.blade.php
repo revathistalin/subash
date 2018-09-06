@@ -1,10 +1,3 @@
-<?php 
-echo $list;
-?>
-
-
-
-
 
 <!DOCTYPE html>
 <html lang="en">
